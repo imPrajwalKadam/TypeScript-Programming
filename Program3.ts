@@ -1,21 +1,15 @@
-//Accept number from user and return the addition of all numbers till that number.
-//Input:4
-//output:10(1+2+3+4)
-
-function Addition(iNo : number)
+function Addition(no1:number,no2:number):number
 {
-     var iCnt = 0;
-     var iSum = 0;
-     for(iCnt = 1;iCnt<=iNo;iCnt++)
-     {
-          iSum = iSum + iCnt;
-     }
-     return iSum;
+     return no1+no2;
 }
-var iNum:number = 4;
-var iRet: number = 0;
+//Annonimus Function
+export var fun = function(no1:number,no2:number)
+{
+     return no1+no2;
+}
 
-iRet = Addition(iNum);
-
-console.log("Addition of number is",iRet);
-
+//fat Arrow Function
+var gun = (no1:number,no2:number) =>
+{
+     return no1+no2;
+}
